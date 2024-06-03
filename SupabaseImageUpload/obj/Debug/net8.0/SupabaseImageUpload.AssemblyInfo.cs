@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SupabaseImageUpload")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+887f0ef8cff2ed7a57c29c581c861b8929b431bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SupabaseImageUpload")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SupabaseImageUpload")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

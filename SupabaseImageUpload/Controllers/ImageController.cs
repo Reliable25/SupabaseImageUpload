@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SupabaseImageUpload.Model;
-using SupabaseImageUpload.Service;
 
 namespace SupabaseImageUpload.Controllers
 {
@@ -8,24 +7,15 @@ namespace SupabaseImageUpload.Controllers
     [ApiController]
     public class ImageController : Controller
     {
-        private readonly SupabaseService _supabaseService;
-
-        public ImageController(SupabaseService supabaseService)
-        {
-            _supabaseService = supabaseService;
-        }
-
         [HttpPost]
-        public async Task<IActionResult> UploadImage([FromForm] CreateImageRequest request)
+        public async Task<IActionResult> UploadImage([FromForm] CreateImageRequest request,
+             [FromServices] Supabase.Client client)
         {
-            var client = _supabaseService.GetClient();
-            var storage = client.Storage;
-
             using var memoryStream = new MemoryStream();
             await request.Image.CopyToAsync(memoryStream);
             var imageBytes = memoryStream.ToArray();
 
-            var bucket = storage.From("photos");
+            var bucket = client.Storage.From("photos");
             var fileName = $"{Guid.NewGuid()}_{request.Image.FileName}";
             await bucket.Upload(imageBytes, fileName);
 

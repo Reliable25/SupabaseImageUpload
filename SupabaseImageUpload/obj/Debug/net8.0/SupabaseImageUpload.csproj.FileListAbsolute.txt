@@ -121,3 +121,4 @@ D:\Ridwan doc\mine\dev.to Folder\SupabaseImageUpload\SupabaseImageUpload\bin\Deb
 D:\Ridwan doc\mine\dev.to Folder\SupabaseImageUpload\SupabaseImageUpload\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Ridwan doc\mine\dev.to Folder\SupabaseImageUpload\SupabaseImageUpload\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Ridwan doc\mine\dev.to Folder\SupabaseImageUpload\SupabaseImageUpload\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Ridwan doc\mine\dev.to Folder\SupabaseImageUpload\SupabaseImageUpload\obj\Debug\net8.0\SupabaseImageUpload.sourcelink.json
