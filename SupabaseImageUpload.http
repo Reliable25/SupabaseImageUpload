@@ -1,0 +1,6 @@
+@SupabaseImageUpload_HostAddress = http://localhost:5171
+
+GET {{SupabaseImageUpload_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
